@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario Básico</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            margin: 0;
+        }
+        h1{
+            background-color: blueviolet;
+            margin: 0;
+            text-align: center;
+            padding: 15px;
+            text-decoration: underline;
+
+        }
+        form{
+            margin-left: 10px;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Formulario</h1>
+
+
+<form action=""><br><br>
+    <fieldset>
+        <legend>Ingrese los Datos del Usuario:</legend>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname" min="3" max="10" placeholder="Introduzca Su Nombre"><br>
+        <label for="lname">Apellidos:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Introduzca Sus Apellidos"><br>
+    </fieldset><br>
+    <fieldset>
+        <legend>Indique Sexo</legend>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Hombre</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">Mujer</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">Otro</label>
+    </fieldset><br>
+   
+    <fieldset>
+        <legend>Hobbys</legend>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">Leer</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Pasear</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Videojuegos</label>
+    </fieldset><br>
+
+    <label for="correo1">Email:</label>
+    <input type="email" name="correo" id="correo1"><br><br>
+    <label for="contraseña1">Contraseña:</label>
+    <input type="password" name="contraseña" id="contraseña1"><br><br>
+    <label for="nacimiento1">Fecha de nacimiento</label>
+    <input type="date" name="nacimiento" id="nacimiento1"><br><br>
+    <label for="color1">Color Favorito</label>
+    <input type="color" name="color" id="color1"><br><br>
+    <label for="rango1">Grado de Conformidad del 1-10</label>
+    <input type="range" name="rango" id="rango1" min="1" max="10"><br><br>
+    <label for="telefono1">Número de teléfono</label>
+    <input type="tel" name="telefono" id="telefono1"><br><br>
+    <label for="curriculum">Inserte Su Curriculum</label>
+    <input type="file" name="curriculum" id="curriculum1"><br><br>
+    <label for="edad1">Inserte Edad</label>
+    <input type="number" name="edad" id="edad1" min="18" max="65"><br><br>
+    <label for="Fecha1">Fecha Envio Formulario</label>
+    <input type="datetime-local" name="Fecha" id="Fecha1"><br><br>
+    <label for="profesor1">Profesor</label>
+    <input type="hidden" name="profesor" id="profesor1"><br><br>
+    <label for="imagen1">Imagen</label>
+    <input type="image" src="gatos.jpg" name="Imagen" id="imagen1" width="60" height="60"><br><br>
+    <label for="mes1">Mes preferido para el viaje</label>
+    <input type="month" name="mes" id="mes1"><br><br>
+    <label for="buscar1">Busca</label>
+    <input type="search" name="buscar" id="buscar1"><br><br>
+    <label for="url">Enlace</label>
+    <input type="url" name="url" id="url1"><br><br>
+    <label for="week">Semana</label>
+    <input type="week" id="week" name="week"><br><br>
+    <label for="appt">Tiempo</label><br><br>
+
+    <label for="Provincia1">Provincia</label>
+    <select id="Provincia1">
+    <option value="Badajoz">Badajoz</option>
+    <option value="Caceres">Cáceres</option>
+    <option value="Barcelona">Barcelona</option>
+    <option value="Lugo">Lugo</option>
+    <option value="Tarragona">Tarragona</option>
+    <option value="Murcia">Murcia</option>
+    <option value="Valencia">Valencia</option>
+    <option value="Madrid">Madrid</option>
+    <option value="Sevilla">Sevilla</option>
+    </select><br><br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
